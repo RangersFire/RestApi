@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     async function loadApiData() {
         try {
-            const response = await fetch('./src/web-set.json'); // Ensure this path is correct
+            const response = await fetch('./web-set.json'); // Ensure this path is correct
             if (!response.ok) {
                 throw new Error(`Gagal memuat data: ${response.status} ${response.statusText}`);
             }

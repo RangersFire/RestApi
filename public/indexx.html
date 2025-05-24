@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anomaki Apis - Koleksi API gratis untuk kebutuhan pengembangan aplikasi Anda">
+    <meta name="keywords" content="API, Rest API, Anomaki, Developer Tools, Free API">
+    <meta name="author" content="Anomaki Team">
+
+    <link rel="icon" href="https://i.pinimg.com/236x/4d/01/91/4d0191ec96622626c52b9691c74d677e.jpg">
+    <meta property="og:image" content="https://i.pinimg.com/236x/4d/01/91/4d0191ec96622626c52b9691c74d677e.jpg">
+    <meta property="og:url" content="https://www.apis-anomaki.zone.id">
+    <meta property="og:type" content="website">
+  
+    <meta property="og:title" content="Anomaki Apis">
+    <meta property="og:description" content="Koleksi API gratis">
+    <title>Anomaki Apis | API Gratis</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button class="theme-toggle" id="themeToggle">🌙 Dark Mode</button>
+            <h1 id="api-name-display">Anomaki Apis</h1>
+            <p class="header-description">
+                Status: <span id="api-status-display" style="font-weight:500; color: var(--success-color);">Online</span> | 
+                <span id="api-description-display">Simple Rest Api.</span>
+            </p>
+        </header>
+        
+        <div class="search-container">
+            <input type="text" class="search-input" id="searchInput" placeholder="Cari API berdasarkan nama atau deskripsi...">
+        </div>
+        
+        <div id="categories-container">
+            </div>
+        
+        <footer>
+            <p>Dibuat dengan <i class="fas fa-heart" style="color: var(--error-color);"></i> oleh <span id="api-creator-display">Anomaki Team</span></p>
+            <p>Versi <span id="api-version-display">v1.0</span></p>
+        </footer>
+    </div>
+
+    <div class="popup" id="apiPopup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2 class="popup-title" id="popupTitle">Hasil API</h2>
+                <button class="close-popup" id="closePopup" aria-label="Close popup">&times;</button>
+            </div>
+            <div class="popup-body" id="popupBody">
+                </div>
+            <div class="popup-footer">
+                <button class="copy-btn" id="copyResultBtn">
+                    <i class="fas fa-copy"></i> Salin Hasil
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="status-notification" id="statusNotification">
+        </div>
+
+    <script src="src/script.js"></script>
+</body>
+</html>
